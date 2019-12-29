@@ -7,8 +7,6 @@ library(fGarch)
 da=read.table("m-ba3dx6113.txt",header=T)
 head(da)
 
-#########   Assignment 7    ##########
-
 #########   Problem 1       ##########
 #----------------EDA------------------#
 basicStats(da$sprtrn)
