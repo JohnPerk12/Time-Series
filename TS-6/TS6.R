@@ -1,6 +1,4 @@
-#########   Assignment 6    ###########
-
-#########   Problems 1    ###########
+#########   Problems 1
 
 da=read.table("d-msft3dx0113.txt",header=T)
 head(da)
@@ -38,13 +36,10 @@ length(msft)
 v1=(1-0.973)*msft[3269]^2+.973*sigma.t[3269]^2
 sqrt(v1)
 
-
 source("garchM.R")
 m5=garchM(msft)
 
-
-
-#########   Problem 2    ###########
+#########   Problem 2
 
 da1=read.table("m-ba3dx6113.txt",header=T)
 head(da1)
@@ -68,5 +63,3 @@ n3=garchM(ba)
 
 source("Tgarch11.R")
 n4=Tgarch11(ba)
-
-
