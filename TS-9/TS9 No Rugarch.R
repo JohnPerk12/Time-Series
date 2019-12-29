@@ -1,6 +1,3 @@
-#########   Assignment 9   ###############
-
-
 # load libraries
 require(fBasics)
 library(PerformanceAnalytics)
@@ -232,9 +229,6 @@ cr <- rcor(dcc.fcst)[[1]][1,2,]
 plot.ts(c(cor.fit,cr))
 
 
-
-
-
 ### DO NOT RUN  ##################
 
 
@@ -265,5 +259,3 @@ dcc.fit
 # conditional correlation
 # plot.new()
 # plot(dcc.fit, which=4)
-
-
