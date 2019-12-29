@@ -5,9 +5,7 @@ library(lmtest)
 library(fGarch) 
 install.package("fGarch")
 
-#########   Assignment 6    ###########
-
-#########   Problems 1    ###########
+#########   Problems 1
 #Read the data
 da=read.table("d-msft3dx0113.txt",header=T)
 head(da)
@@ -75,7 +73,7 @@ predict(m5,4)
 m5p
 
 
-#########   Problem 2    ###########
+#########   Problem 2
 
 da1=read.table("m-ba3dx6113.txt",header=T)
 head(da1)
@@ -115,5 +113,3 @@ n3=garchM(ba)
 #Part 2.5
 source("Tgarch11.R")
 n4=Tgarch11(ba)
-
-
