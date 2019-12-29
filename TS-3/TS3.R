@@ -1,5 +1,3 @@
-#TS3 PREDICT 413
-
 require(fBasics)
 require(fpp)
 require(knitr)
@@ -235,6 +233,4 @@ s2
   backtest <- list(origin=orig,error=err,rmse=rmse,mabso=mabso)
 }
 
-
 backtest(model2,chg,380,1,inc.mean=F)
-
