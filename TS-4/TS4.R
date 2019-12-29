@@ -1,13 +1,4 @@
-#### Consumer ####
-#### Problem 1 ####
-
-# p 94, green Tsay
-
-
 #### Duration ####
-#### Problem 2  ####
-
-
 da=read.table("m-unempmean.txt",header=T)
 head(da)
 tdx=da[,1]+da[,2]/12
@@ -40,11 +31,7 @@ dim(da)
 backtest(m2,ddur,750,1,inc.mean=F)
 backtest(m4,ddur,750,1,inc.mean=F)
 
-
-
 #### Oil Prices ####
-#### Problem 3  ####
-
  
 da=read.table("w-coilwtico.txt",header=T)
 head(da)
@@ -75,5 +62,3 @@ m3=arima(rtn,order=c(3,0,2),include.mean=F)
 m3
 
 tsdiag(m3,gof=20)
-
-
