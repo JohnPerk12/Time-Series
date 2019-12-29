@@ -1,7 +1,4 @@
-######   Assignment 5   ##########
-
-
-######   Problem 1     ##########
+######   Problem 1
 
 da=read.table("m-PastorStambaugh.txt",header=T)
 head(da)
@@ -44,9 +41,7 @@ source("backtest.R")
 backtest(m4,xt,81,1)
 backtest(m5,xt,81,1)
 
-
-
-######   Problem 3    ##########
+######   Problem 3
 
 da=read.table("m-FamaBlissdbndyields.txt",header=T)
 dim(da)
@@ -71,7 +66,7 @@ m5
 tsdiag(m5,gof=24)  ### very close to that of the above AR(5) model.
 
 
-######   Problem 4    ##########
+######   Problem 4 
 
 m6=arima(y3t,order=c(6,0,0),xreg=y1t)
 m6
@@ -91,7 +86,7 @@ Mod(s1)
 ### Parking lot
 #################
 
-######   Problem 1      ##########
+######   Problem 1 
 
 #da=read.table("m-FamaFrench.txt",header=T)
 #fix(da)
@@ -106,4 +101,3 @@ Mod(s1)
 #ucl=pm1$pred+1.96*pm1$se
 #lcl
 #ucl
-
