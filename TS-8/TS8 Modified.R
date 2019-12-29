@@ -1,5 +1,3 @@
-#########   Assignment 8    ##########
-
 #########   Problem 1       ##########
 library(tseries)
 library(fBasics)
@@ -35,7 +33,6 @@ ccm(z,5)
 
 source("mq.R")
 mq(z,10)
-
 
 #########   Problem 2       ##########
 
@@ -73,12 +70,3 @@ m1=VAR(growth,p=4)
 
 m2=refVAR(m1, thres=1.96)
 MTSdiag(m2)
-
-
-
-
-
-
-
-
-
