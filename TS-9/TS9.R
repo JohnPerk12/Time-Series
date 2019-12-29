@@ -1,6 +1,3 @@
-#########   Assignment 9   ###############
-
-
 # load libraries
 library(PerformanceAnalytics)
 library(rugarch)
@@ -226,10 +223,3 @@ dcc.fcst
 
 # plot forecasts
 4
-
-
-
-
-
-
-
