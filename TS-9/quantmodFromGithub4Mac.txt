@@ -1,0 +1,46 @@
+If you are running either Unix or Linux, you may need to run additional code adapted from Stackoverflow (https://stackoverflow.com/questions/23916219/os-x-package-installation-depends-on-gfortran-4-8):
+
+> sudo -i {you will need your computer's password}
+> curl -O http://r.research.att.com/libs/gfortran-4.8.2-darwin13.tar.bz2
+> mkdir /tmp/gfortran
+> tar fvxz gfortran-4.8.2-darwin13.tar.bz2 -C /tmp/gfortran
+> rm /tmp/gfortran/usr/local/bin/gfortran
+> cp -r /tmp/gfortran/usr/local/ /usr/local
+> mkdir -p ~/.R
+> touch ~/.R/Makevars
+> vi
+FLIBS=""
+F77="gfortran-4.8"
+FC="gfortran-4.8"
+{press escthen save and quit vi}
+:wq
+> exit
+
+Now restart R and run the following:
+
+#########   Assignment 9   ###############
+
+
+# load libraries
+library(PerformanceAnalytics)
+library(rugarch)
+library(car)
+library(FinTS)
+library(rmgarch)
+library(curl)
+library(devtools)
+
+options(digits=4)
+
+devtools::install_github("joshuaulrich/quantmod", ref="157_yahoo_502")
+library(quantmod)
+source("covEWMA.r")
+
+# download data
+symbol.vec = c("MSFT", "^GSPC")
+getSymbols(symbol.vec, from ="2000-01-03", to = "2012-04-03")
+colnames(MSFT)
+start(MSFT)
+end(MSFT)
+
+Run the remaining R script.
