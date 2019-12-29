@@ -1,8 +1,3 @@
-#### Consumer ####
-#### Problem 1 ####
-
-# p 94, green Tsay
-
 require(fBasics)
 require(fpp)
 require(knitr)
