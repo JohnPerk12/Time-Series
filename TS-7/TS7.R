@@ -1,7 +1,4 @@
-#########   Assignment 7    ##########
-
 #########   Problem 1       ##########
-
 
 sp=log(da1$sprtrn+1)
 acf(sp)
