@@ -1,6 +1,3 @@
-#########   Assignment 9   ###############
-
-
 # load libraries
 require(fBasics)
 library(PerformanceAnalytics)
@@ -17,7 +14,6 @@ library(quantmod)
 install.packages("FinTS", repos="http://R-Forge.R-project.org")
 library(FinTS)
 source("covEWMA.r")
-
 
 # download data
 symbol.vec = c("MSFT", "^GSPC")
@@ -101,7 +97,6 @@ par(mfrow=c(1,1))
 lambda <- 0.94
 cov.ewma <- covEWMA(as.data.frame(MSFT.GSPC.ret), lambda=lambda)
 
-
 ## extract conditional variance and correlation
 
 ### conditional variance
@@ -149,7 +144,6 @@ half.life = 125
 lambda = exp(log(0.5)/half.life)
 cov.ewma <- covEWMA(as.data.frame(MSFT.GSPC.ret), lambda=lambda)
 
-
 ## extract conditional variance and correlation
 
 ### conditional variance
@@ -177,7 +171,6 @@ par(mfrow=c(1,1))
 
 # Part 1.4
 # DCC estimation
-#
 
 # univariate normal GARCH(1,1) for each series
 garch11.spec = ugarchspec(mean.model = list(armaOrder = c(0,0)), 
@@ -234,8 +227,6 @@ plot.ts(c(cor.fit,cr)
 
 
 
-
-
 ### DO NOT RUN  ##################
 
 
@@ -266,5 +257,3 @@ dcc.fit
 # conditional correlation
 # plot.new()
 # plot(dcc.fit, which=4)
-
-
