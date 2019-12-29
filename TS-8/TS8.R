@@ -1,5 +1,3 @@
-#########   Assignment 8    ##########
-
 #########   Problem 1       ##########
 
 require(MTS)
@@ -17,7 +15,6 @@ source("ccm.R")
 ccm(z,5)
 source("mq.R")
 mq(z,10)
-
 
 #########   Problem 2       ##########
 
