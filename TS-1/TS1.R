@@ -1,6 +1,3 @@
-#R code Assignment 1
-
-
 require(fBasics)
 require(quantmod)   
 require(fpp)        
